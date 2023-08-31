@@ -12,7 +12,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ texts }) => {
     const [showCursor, setShowCursor] = useState(true);
 
     useEffect(() => {
-        let timeoutId;
+        let timeoutId: any;
         if (generating) {
             if (currentIndex < texts[currentArrayIndex].length) {
                 timeoutId = setTimeout(() => {
