@@ -3,7 +3,7 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import Typewriter from "@/components/Typewriter";
-import {titles} from "@/constant";
+import {banner, titles} from "@/constant";
 
 const Banner: React.FC = ({ }) => {
 
@@ -16,9 +16,9 @@ const Banner: React.FC = ({ }) => {
                     transition={{ duration: 0.5 }}   // Animation duration
                     className="w-full mt-[320px] flex flex-col items-start sm:w-1/2 sm:mt-0"
                 >
-                    <div className="font-['Poppins-ExtraBold'] text-6xl mb-2">Hey! I'm a</div>
+                    <div className="font-['Poppins-ExtraBold'] text-6xl mb-2">{banner.hey}</div>
                     <div className="font-['Poppins-ExtraBold'] text-5xl text-orange-400 mb-2 min-h-[48px]"><Typewriter texts={titles}/></div>
-                    <div className="text-slate-300 text-lg">Obviously I'm a Web Designer. Web Developer with over 7 years of experience. Experienced with all stages of the development.</div>
+                    <div className="text-slate-300 text-lg">{banner.description}</div>
                 </motion.div>
                 <div className="w-full justify-center flex sm:w-1/2">
                     <img src={'/picture-banner.png'} className="w-[700px] h-[700px] min-w-[500px] min-h-[500px] object-contain"/>
