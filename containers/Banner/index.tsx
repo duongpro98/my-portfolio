@@ -1,12 +1,11 @@
 'use client'
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {motion} from "framer-motion";
 import Typewriter from "@/components/Typewriter";
 import {banner, titles} from "@/constant";
 
 const Banner: React.FC = ({ }) => {
-
     return (
         <div className="flex justify-center items-center w-screen h-screen bg-transparent pt-[75px] px-[50px] sticky top-0 left-0 z-[-1]">
             <div className="w-full flex flex-col sm:w-10/12 sm:flex-row items-center">
@@ -21,7 +20,7 @@ const Banner: React.FC = ({ }) => {
                     <div className="text-slate-300 text-lg">{banner.description}</div>
                 </motion.div>
                 <div className="w-full justify-center flex sm:w-1/2">
-                    <img src={'/picture-banner.png'} className="w-[700px] h-[700px] min-w-[500px] min-h-[500px] object-contain"/>
+                    <img src={'/background_anime.png'} className="w-[700px] h-[700px] min-w-[500px] min-h-[500px] object-contain"/>
                 </div>
             </div>
         </div>

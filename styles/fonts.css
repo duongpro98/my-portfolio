@@ -10,3 +10,7 @@
     font-family: 'Poppins-ExtraBold';
     src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
 }
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
