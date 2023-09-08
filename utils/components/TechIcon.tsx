@@ -36,7 +36,7 @@ const renderIcon = {
     redux: <SvgRedux/>,
     storybook: <SvgStorybook/>,
     'tailwind-css': <SvgTailwindCSS/>
-}
+} as any;
 
 const TechIcon:React.FC<techIconProps> = ({ icon, text }) => {
     return (
